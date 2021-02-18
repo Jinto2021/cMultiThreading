@@ -6,9 +6,9 @@ compiler:
 
 before_install:
 
- # - sudo apt-get update
+  - sudo apt-get update
   
- # - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
+  - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
   
 install:
 
@@ -21,6 +21,7 @@ script:
  # - ./output  
 
   - echo "compiling single_sample_A.c"
+  - gcc single_sample_A.c -o learn_J -lpthread
   - gcc single_sample_A.c -o learn_J -lpthread
   - ./learn_J
 
