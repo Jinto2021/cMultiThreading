@@ -1,0 +1,3 @@
+gcc sample_B.c -o learn_J -lpthread
+
+./learn_J
