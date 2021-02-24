@@ -20,8 +20,12 @@ script:
  # - gcc hello_world.c -o output
  # - ./output  
 
-  - echo "compiling single_sample_A.c"
-  - gcc single_sample_A.c -o learn_J -lpthread
+ # - echo "compiling single_sample_A.c"
  # - gcc single_sample_A.c -o learn_J -lpthread
-  - ./learn_J
+ ## - gcc single_sample_A.c -o learn_J -lpthread
+ # - ./learn_J
+  
+  - echo "compiling JJ_practice.c"
+  - gcc JJ_practice.c -o output_JJ -lpthread
+  - ./output_JJ
 
