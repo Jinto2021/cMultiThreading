@@ -22,7 +22,8 @@ void* printing_function_str2(void* arg_var2)
 
 struct value_set* fun_var2=arg_var2;
 //printf("Starting printing_function_str\n");
-printf("%c%d\n",fun_var2->letter_val,fun_var2->num_val);
+//printf("%c%d\n",fun_var2->letter_val,fun_var2->num_val);
+printf("%d-%c\n",fun_var2->num_val,fun_var2->letter_val);	
 //printf("Exiting printing_function_str\n");
 }
 
